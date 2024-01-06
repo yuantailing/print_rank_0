@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 
 classifiers = [
@@ -17,7 +17,7 @@ with open("README.md", "r") as fp:
 
 
 setup(name="print_rank_0",
-      version="0.1.0",
+      version="0.1.1",
       author="Tailing Yuan",
       author_email="yuantailing@gmail.com",
       url="https://github.com/yuantailing/print_rank_0",
