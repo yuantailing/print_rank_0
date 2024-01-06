@@ -14,3 +14,4 @@ def process_group():
 def test_print_rank_0(process_group):
     print_rank_0("Hello World!")
     print_rank_0.print_rank_0("Hello World!")
+    print_rank_0.print_rank_last("Hello World!")

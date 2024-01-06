@@ -12,6 +12,14 @@ class CallableModule(sys.modules[__name__].__class__):
             print(*args, **kwargs)
 
 
+    def print_rank_last(self, *args, **kwargs):
+        """Print the message if the current rank is the last one."""
+        import torch
+        last_rank = torch.distributed.get_world_size() - 1
+        if torch.distributed.get_rank() == last_rank:
+            print(*args, **kwargs)
+
+
 # Create an instance of CallableModule
 inst = CallableModule(__name__)
 inst.__doc__ = inst.print_rank_0.__doc__
