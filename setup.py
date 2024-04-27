@@ -17,7 +17,7 @@ with open("README.md", "r") as fp:
 
 
 setup(name="print_rank_0",
-      version="0.1.1",
+      version="0.1.2",
       author="Tailing Yuan",
       author_email="yuantailing@gmail.com",
       url="https://github.com/yuantailing/print_rank_0",
